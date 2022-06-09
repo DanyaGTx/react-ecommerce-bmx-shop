@@ -1,0 +1,11 @@
+.myBytton-block{
+    display: block;
+}
+.myButton{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 22px;
+    background-color: orange;
+    cursor: pointer;
+}

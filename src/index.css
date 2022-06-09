@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+.wrapper{
+  max-width: 1280px;
+  margin: 50px auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  flex: 1;
+}
+
+.header{
+  position: relative;
+  margin-bottom: 40px;
+}
+.logo-text{
+  font-weight: 600;
+  font-size: 20px;
+}
+.banner{
+  position: relative;
+  background: url('./img/bg.jpg') top center;
+  background-blend-mode: multiply;
+  background-color: rgb(242, 242, 242);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 40px;
+
+}
+.banner-text{
+  position: absolute;
+  font-size: 64px;
+  max-width: 500px;
+  color: rgb(255, 255, 255);
+  top: 30%;
+  text-align: center;
+  background-color: rgb(255, 140, 0);
+  padding: 10px;
+}
+.logo-block{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+.logo-text-block{
+  margin-left: 10px;
+}
+.logo-img{
+  width: 80px;
+  width: 80px;
+}
+.navigation-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.upper-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.navigation-item{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+.navigation-item:hover{
+  color: rgba(253, 126, 0, 0.928);
+  
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+.header-link{
+  margin-right: 50px;
+}
+/* убрать отступ у последнего элемента */
+.navigation-list .header-link:last-child{ 
+  margin: 0;
+}
+.cabinet-ico{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  transition: opacity 0.3s;
+}
+.cabinet-ico:hover{
+  opacity: 0.7;
+}
+.cart-ico{
+  width: 45px;
+  height: 45px;
+  transition: opacity, transform 0.5s;
+}
+.cart-ico:hover{
+  opacity: 0.7;
+
+}
+/* Amount of Product cart */
+.cart-block{
+  
+  position: relative;
+ 
+}
+.cart{
+  cursor: pointer;
+}
+.amountProductOfCart{
+  position: absolute;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: orange;
+  font-weight: 700;
+  right: -10px;
+  z-index: 100;
+}
+.openCart{
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  
+}
+/* Active Cart */
+.shopCart{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 450px;
+  min-height: 150px;
+  background-color: #fafafa;
+  box-shadow: 4px 5px 15px -7px #606060;
+  z-index: 99;
+  
+}
+.shopCart-close{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  background-color: rgb(158, 158, 158);
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: black;
+ 
+}
+.activeCart{
+  opacity: 0.3;
+  
+}
+.main{
+  
+}
+.bikes__section{
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.filter-block{
+  margin-top: 20px;
+  text-align: right;
+  
+}
+.filter-select{
+  padding: 5px;
+  font-size: 14px;
+}
+.mySearch{
+  padding: 15px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 20px;
+}
+.mySearch__block{
+  position: relative;
+  width: 100%;
+}
+
+.activeInCartButton{
+  background-color: grey !important;
+}
+/* product Card */
+.product-card{
+  max-width: 350px;
+  padding: 50px 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.product-card-price{
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.product-bmx-image{
+  cursor: pointer;
+  width: 100%;
+  transition: scale, .3s ;
+}
+.product-bmx-image:hover{
+  transform: scale(1.05);
+}
+.productInCart-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productInCart-information{
+  display: flex;
+  margin-top: 30px;
+}
+
+.deleteProduct-icon{
+  cursor: pointer;
+  transition: all .3s;
+}
+.deleteProduct-icon:hover{
+  transform: scale(1.1);
+}
+/* Product View */
+.productView-page{
+  display: flex;
+}
+.productView-price{
+  font-size: 40px;
+  color: orange;
+}
+.productView-button{
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: 22px;
+    background-color: orange;
+    cursor: pointer;
+}
+.productView-information{
+  margin-left: 20px;
+}
+.productView-details{
+  margin-bottom: 30px; 
+  max-width: 600px;
+}
+.orderPage-totalPrice{
+  padding-top: 40px;
+  font-size: 20px;
+}
+.amountBikes-block{
+  font-size: 30px;
+}
+.addBike-plus{
+  cursor: pointer;
+  margin-left: 30px;
+}
+/* Cabinet */
+.cabinetPopUp{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 250px;
+  min-height: 80px;
+  background-color: #fafafa;
+  box-shadow: 4px 5px 15px -7px #606060;
+}
+.cabinet-popUp__link{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 20px; 
+  transition: all .3s;
+}
+.cabinet-popUp__link__block{
+  margin-bottom: 30px;
+  text-align: left;
+ 
+}
+.cabinet-popUp__link:hover{
+  background: orange;
+}
+.input__user-data{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.button__user-submit,.logout__button{
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+.copyright-text{
+  text-align: center;
+  margin-top: 100px;
+}
