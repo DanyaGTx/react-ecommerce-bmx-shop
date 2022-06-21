@@ -307,7 +307,7 @@ html,body {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.button__user-submit,.logout__button{
+.button__user-submit,.logout__button,.orderButton{
   font-size: 20px;
   padding: 10px 30px;
   border-radius: 10px;
